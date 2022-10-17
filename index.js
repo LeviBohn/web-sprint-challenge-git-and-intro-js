@@ -296,10 +296,12 @@ Use addArtist to do the following:
 5. Add the newly created object to the copied array, then return the copied array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array, name, years, genre, nationality, bio) {
+  const copiedArray = array.slice();
+  copiedArray.push({name, years, genre, nationality, bio});
+  return copiedArray;
 }
-
+console.log ('task 6:', addArtist(artists, 'Levi', '1980-2022', 'Web Design', 'Anglo American', 'I sold cars for several years. Now I want to create software to sell to that industry.'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
