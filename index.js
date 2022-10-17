@@ -248,9 +248,16 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(array) {
+const namesOnly = [];
+  for (let i=0; i<array.length; i++) {
+    namesOnly.push(array[i].name);
+  }
+    return (namesOnly);
+  
 }
+console.log('task 4:', listOfNames(artists));
+
 
 
 
